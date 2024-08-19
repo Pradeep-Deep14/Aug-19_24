@@ -31,3 +31,8 @@ def duplicate_elements(my_list):
     return  duplicate_elements
     
 print(duplicate_elements(my_list))
+
+
+my_list = [1, 2, 3, 4, 1, 2, 3, 5, 4, 5]
+duplicates=list(set([x for x in my_list if my_list.count(x)>1]))
+print(duplicates)
